@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark"
+    android:weightSum="5"
+    tools:context=".PlayerSetup">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:textSize="55sp"
+        android:textColor="@color/white"
+        android:text="Enter names"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+    <TextView
+        android:id="@+id/firstPlayerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First player name"
+        android:fontFamily="@font/baloo"
+        android:textSize="28sp"
+        android:textColor="@color/red"
+        android:layout_marginStart="10dp"/>
+    <EditText
+        android:id="@+id/firstPlayerEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstPlayerTxt"
+        android:hint="Enter name here"
+        android:fontFamily="@font/baloo"
+        android:backgroundTint="@color/red"
+        android:textColorHint="@color/red"
+        android:textColor="@color/red"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:maxLength="10"/>
+
+    <TextView
+        android:id="@+id/secondPlayerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second player name"
+        android:fontFamily="@font/baloo"
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        android:layout_below="@+id/firstPlayerEditTxt"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"/>
+    <EditText
+        android:id="@+id/secondPlayerEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name here"
+        android:fontFamily="@font/baloo"
+        android:layout_below="@+id/secondPlayerTxt"
+        android:backgroundTint="@color/blue"
+        android:textColorHint="@color/blue"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:maxLength="10"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <Button
+        android:id="@+id/startGameBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:fontFamily="@font/baloo"
+        android:text="Start game"
+        android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+
+</LinearLayout>
